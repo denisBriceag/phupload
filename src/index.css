@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+
+:root {
+  --primary: #efb6b2;
+  --secondary: #4e4e4e;
+  --error: #ff4a4a;
+}
+
+/* base styles & title */
+body {
+  font-family: "Noto Serif";
+  color: var(--secondary);
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.title h1 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.title h2,
+.title p {
+  text-align: center;
+}
+
+.title h2 {
+  margin-top: 60px;
+  font-size: 2.6rem;
+}
+
+.row {
+  display: flex;
+}
+
+.progress-bar-div {
+  width: 250px;
+  border: 1px solid #2375df;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #2375df;
+}
+
+.data-out {
+  margin-right: 20px;
+}
+
+/* upload form styles */
+
+/* progress bar styles */
+
+/* image grid styles */
+
+/* modal styles */
