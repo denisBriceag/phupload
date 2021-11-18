@@ -34,27 +34,52 @@ body {
   font-size: 2.6rem;
 }
 
-.row {
-  display: flex;
-}
-
-.progress-bar-div {
-  width: 250px;
-  border: 1px solid #2375df;
-}
-
-.progress-bar {
-  height: 20px;
-  background-color: #2375df;
-}
-
-.data-out {
-  margin-right: 20px;
-}
-
 /* upload form styles */
+form {
+  margin: 30px auto 10 px;
+  text-align: center;
+}
+
+label input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 30px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+label:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.output {
+  height: 60px;
+  font-size: 0.8 rem;
+}
+
+.error {
+  color: var(--error);
+}
 
 /* progress bar styles */
+.progress-bar {
+  height: 5px;
+  background: var(--primary);
+  margin-top: 20px;
+}
+
 
 /* image grid styles */
 

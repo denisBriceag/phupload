@@ -11,7 +11,6 @@ const useStorage = (file) => {
     const collectionRef = firestore.collection('images');
 
     storageRef.put(file).on('state_change',
-
       (snap) => {
         console.log(snap)
         let percent = Math.floor((snap.bytesTransferred / snap.totalBytes) * 100);

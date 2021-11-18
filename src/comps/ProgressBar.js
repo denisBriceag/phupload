@@ -11,19 +11,12 @@ const ProgressBar = ({ file, setFile }) => {
     }
   }, [url, setFile])
 
-
-
   return (
-    <div>
-      <div>{progress}%</div>
-      <div className="progress-bar-div">
-        <motion.div className="progress-bar"
-          initial={{ width: 0 }}
-          animate={{ width: `${progress}%` }} >
-        </motion.div>
-      </div>
-    </div>
-  )
+    <motion.div className="progress-bar"
+      initial={{ width: 0 }}
+      animate={{ width: `${progress}%` }} >
+    </motion.div>
+  );
 
 }
 
